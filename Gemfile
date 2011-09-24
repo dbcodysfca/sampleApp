@@ -34,6 +34,10 @@ group :test do
   gem 'factory_girl_rails', '1.0'
 end
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
